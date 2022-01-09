@@ -21,6 +21,8 @@
 
 html, body {
     background-color: darkgrey;
+    background: url('../imagens/fundo.jpg') center center no-repeat fixed;
+    background-size: cover;
     font-family: var(--font-normal);
 }
 
@@ -36,7 +38,7 @@ header h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--font-titulo);
-    font-size: 8vw;
+    font-size: 7vw;
 }
 
 header p {
@@ -55,7 +57,7 @@ header a:hover, footer a:hover {
 
 
 main {
-    max-width: 80%;
+    max-width: 70vw;
     margin: auto;
 }
 
@@ -63,7 +65,7 @@ section {
     padding: 10vh 0px 10vh 30px;
     line-height: 2em;
     font-family: var(--font-conteudo);
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 section p {
@@ -108,13 +110,28 @@ footer {
 }
 
 
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 8vw;
+        }
+        
+        main {
+            min-width: 80vw;
+            margin: auto;
+        }
+    
+        section {
+            font-size: 2vw;
+        }
+}
+
 @media (max-width: 768px) {
     header h1 {
     font-size: 10vw;
     }
     
     main {
-        min-width: 100vw;
+        min-width: 90vw;
         margin: auto;
     }
 
@@ -126,6 +143,11 @@ footer {
 @media (max-width: 425px) {
     header h1 {
         font-size: 12vw;
+        }
+    
+        main {
+            min-width: 100vw;
+            margin: auto;
         }
 
         section {
